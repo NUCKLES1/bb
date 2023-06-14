@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Over+the+Rainbow&display=swap');
+
+.App {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: black;
+  justify-content: center;
+  align-items: center
+}
+
+.Holder {
+  display: flex;
+  padding-top: 7rem;
+  padding-left: 5%;
+  width: 90%;
+  height: 90rem;
+  background-color: black;
+}
+
+.Holder img {
+  position: relative;
+  object-fit: cover;
+}
+
+.black1 {
+  position: absolute;
+  background-color: black;
+  margin-left: 0rem;
+  top: 0;
+  left: 0;
+  height: 10rem;
+  width: 98%;
+  transform: rotate(-4deg);
+}
+
+.black2 {
+  position: absolute;
+  background-color: black;
+  margin-left: 0rem;
+  top: 83rem;
+  left: 0;
+  height: 10rem;
+  width: 98%;
+  transform: rotate(-4deg);
+}
+
+.img1 {
+  width: 390.99px;
+  height: 630px;
+}
+
+.img2 {
+  left: 1.5rem;
+  width: 65%;
+  height: 300px;
+}
+
+.img3 {
+  top: 20rem;
+  right: 47.8rem;
+  width: 380.99px;
+  height: 310px;
+}
+
+.img4 {
+  top: 20rem;
+  right: 46.7rem;
+  width: 390.99px;
+  height: 630px;
+}
+
+.img5 {
+  top: 40.5rem;
+  right: 122.2rem;
+  Width: 50rem;
+  Height: 620px;
+}
+
+.img6 {
+  top: 60.5rem;
+  right: 121.19rem;
+  width: 390.99px;
+  height: 300px;
+}
+
+.FooterDiv {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../public/back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.FooterDiv h3 {
+  padding-top: 8rem;
+  font-family: 'Over the Rainbow';
+  font-weight: 400;
+  font-size: 38.675px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.FooterDiv button {
+  padding: 1rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  margin-top: 3rem;
+  border: 2px solid;
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.social{
+  display: flex;
+  justify-content: space-between;
+  width: 9rem;
+  height: 1.5rem;
+  margin-left: 44.7%;
+}
+
+@media screen and (max-width: 600px) {
+  .Holder {
+    display: flex;
+    padding-top: 7rem;
+    padding-left: 2%;
+    width: 98%;
+    height: 45rem;
+  }
+  .black1 {
+    top: 6rem;
+    height: 3rem;
+    width: 99%;
+    transform: rotate(-4deg);
+  }
+  
+  .black2 {
+    top: 46rem;
+    height: 3rem;
+    width: 99%;
+  }
+
+  .img1 {
+    width: 30%;
+    height: 20.5rem;
+  }
+  
+  .img2 {
+    left: 0.5rem;
+    width: 65.53%;
+    height: 12rem;
+  }
+  
+  .img3 {
+    top: 12.5rem;
+    right: 16rem;
+    width: 33%;
+    height: 8rem;
+  }
+  
+  .img4 {
+    top: 12.5rem;
+    right: 15.4rem;
+    width: 30%;
+    height: 20rem;
+  }
+  
+  .img5 {
+    top: 21rem;
+    right: 40.2rem;
+    Width: 65.3%;
+    Height: 19rem;
+  }
+  
+  .img6 {
+    top: 33rem;
+    right: 39.5rem;
+    width: 30%;
+    height: 8rem;
+  }
+
+  .FooterDiv {
+    width: 100%;
+    height: 32rem;
+  }
+
+  .FooterDiv h3 {
+    padding-top: 4rem;
+    font-size: 36.675px;
+    line-height: 0px;
+  }
+  
+  .FooterDiv button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 1rem;
+  }
+  
+  .social{
+    width: 7rem;
+    height: 1.2rem;
+    margin-left: 37%;
+  }
+}
