@@ -3,7 +3,7 @@ import Footer from "./component/Footer";
 import Navbar from "./component/Navbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import data from "./TemplateData.json"
+import data from "./TemplateData.json";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -63,7 +63,7 @@ function App() {
               <div className="prev-button">
                 <AiOutlineLeft />
               </div>
-              
+
               <div className="next-button">
                 <AiOutlineRight />
               </div>
@@ -90,12 +90,18 @@ function App() {
         </p>
       </div>
       <div className="Holder">
-        <img className="img1" src="image.png" alt="" />
-        <img className="img2" src="image1.png" alt="" />
-        <img className="img3" src="image2.png" alt="" />
-        <img className="img4" src="image3.png" alt="" />
-        <img className="img5" src="image4.png" alt="" />
-        <img className="img6" src="image5.png" alt="" />
+        <div className="holder1">
+          <img className="img1" src="image.png" alt="" />
+          <img className="img2" src="image1.png" alt="" />
+        </div>
+        <div className="holder2">
+          <img className="img3" src="image2.png" alt="" />
+          <img className="img4" src="image3.png" alt="" />
+        </div>
+        <div className="holder3">
+          <img className="img5" src="image4.png" alt="" />
+          <img className="img6" src="image5.png" alt="" />
+        </div>
       </div>
       <div className="block5">
         <div className="box1">
