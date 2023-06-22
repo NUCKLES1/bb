@@ -40,7 +40,7 @@ function App() {
               depth: 100,
               modifier: 2.5,
             }}
-            pagination={{ el: ".swiper-pagination", clickable: true }}
+           /*pagination={{ el: ".swiper-pagination", clickable: true }}*/
             navigation={{
               nextEl: ".next-button",
               prevEl: ".prev-button",

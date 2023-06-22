@@ -1,17 +1,25 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("menu-divi");
+  };
+
   const [show, setShow] = useState(false);
-  const [show1, setShow1] = useState(false);
 
   return (
     <div className="Navbar">
       <div className="nav">
         <h2>ToyosiOseni</h2>
-        <p onClick={() => setShow(true)}>NEW MUSIC</p>
-        <FaBars onClick={() => setShow1(true)} className="FaBars" />
+        <p onClick={() => setShow(true)}>
+          NEW MUSIC <img src="dot.png" alt="" />
+        </p>
+        <FaBars className="FaBars" onClick={showNavbar} />
       </div>
       {show ? (
         <div className="popup">
@@ -71,28 +79,30 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      ) : null}
-      {show1 ? (
-        <div className="menu-div">
-          <div className="nav">
-            <h2>ToyosiOseni</h2>
-            <p onClick={() => setShow(true)}>NEW MUSIC</p>
-            <FaBars onClick={() => setShow1(false)} className="FaBars" />
-          </div>
-          <ul>
-            <li>Gallery</li>
-            <li>Story</li>
-            <li>Music</li>
-            <li>Video</li>
-            <li>Contact</li>
-          </ul>
-          <div className="menu-social">
-            <img src="facebook.png" alt="" />
-            <img src="twitter.png" alt="" />
-            <img src="instagram.png" alt="" />
-          </div>
+      )
+       : null}
+
+      <div className="menu-div" id="menu-div" ref={navRef}>
+        <div className="nav">
+          <h2>ToyosiOseni</h2>
+          <p onClick={() => setShow(true)}>
+            NEW MUSIC <img src="dot.png" alt="" />
+          </p>
+          <FaBars className="FaBars" onClick={showNavbar}/>
         </div>
-      ) : null}
+        <ul>
+          <li><Link to="/gallery"><p className="link">Gallery</p></Link></li>
+          <li><Link to="/story"><p className="link">Story</p></Link></li>
+          <li><Link to="/music"><p className="link">Music</p></Link></li>
+          <li><Link to="/video"><p className="link">Video</p></Link></li>
+          <li><Link to="/contact"><p className="link">Contact</p></Link></li>
+        </ul>
+        <div className="menu-social">
+          <img src="facebook.png" alt="" />
+          <img src="twitter.png" alt="" />
+          <img src="instagram.png" alt="" />
+        </div>
+      </div>
     </div>
   );
 };
