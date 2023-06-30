@@ -79,23 +79,44 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      )
-       : null}
+      ) : null}
 
       <div className="menu-div" id="menu-div" ref={navRef}>
         <div className="nav">
           <h2>ToyosiOseni</h2>
-          <p onClick={() => setShow(true)}>
+          <p>
             NEW MUSIC <img src="dot.png" alt="" />
           </p>
-          <FaBars className="FaBars" onClick={showNavbar}/>
+          <FaBars className="FaBars" onClick={showNavbar} />
         </div>
         <ul>
-          <li><Link to="/gallery"><p className="link">Gallery</p></Link></li>
-          <li><Link to="/story"><p className="link">Story</p></Link></li>
-          <li><Link to="/music"><p className="link">Music</p></Link></li>
-          <li><Link to="/video"><p className="link">Video</p></Link></li>
-          <li><Link to="/contact"><p className="link">Contact</p></Link></li>
+          <li>
+            <Link to="/gallery">
+              <button className="link">Gallery
+              </button>
+              
+            </Link>
+          </li>
+          <li>
+            <Link to="/story">
+              <button className="link">Story</button>
+            </Link>
+          </li>
+          <li>
+            <Link to="/music">
+              <button className="link">Music</button>
+            </Link>
+          </li>
+          <li>
+            <Link to="/video">
+              <button className="link">Video</button>
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact">
+              <button className="link">Contact</button>
+            </Link>
+          </li>
         </ul>
         <div className="menu-social">
           <img src="facebook.png" alt="" />

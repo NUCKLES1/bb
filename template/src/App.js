@@ -12,6 +12,8 @@ import "swiper/css/navigation";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
+
+
 function App() {
   return (
     <div className="App">
@@ -40,7 +42,7 @@ function App() {
               depth: 100,
               modifier: 2.5,
             }}
-           /*pagination={{ el: ".swiper-pagination", clickable: true }}*/
+            /*pagination={{ el: ".swiper-pagination", clickable: true }}*/
             navigation={{
               nextEl: ".next-button",
               prevEl: ".prev-button",
@@ -73,7 +75,7 @@ function App() {
         </div>
       </div>
       <div className="block3">
-        <img src="musician.png" alt="" />
+        <img src="https://res.cloudinary.com/dbc4muo4t/image/upload/v1687844539/mobile2_ppwzc8.png" alt="musician" />
         <h1>
           He Called,
           <br /> She picked.
@@ -91,16 +93,16 @@ function App() {
       </div>
       <div className="Holder">
         <div className="holder1">
-          <img className="img1" src="image.png" alt="" />
-          <img className="img2" src="image1.png" alt="" />
+          <img className="img1" src="https://res.cloudinary.com/dbc4muo4t/image/upload/v1687844535/image_gpu5gr.png" alt="" />
+          <img className="img2" src="https://res.cloudinary.com/dbc4muo4t/image/upload/v1687844536/image1_vfuihe.png" alt="" />
         </div>
         <div className="holder2">
-          <img className="img3" src="image2.png" alt="" />
-          <img className="img4" src="image3.png" alt="" />
+          <img className="img3" src="https://res.cloudinary.com/dbc4muo4t/image/upload/v1687844536/image2_riwejp.png" alt="" />
+          <img className="img4" src="https://res.cloudinary.com/dbc4muo4t/image/upload/v1687844539/image3_k0vpia.png" alt="" />
         </div>
         <div className="holder3">
-          <img className="img5" src="image4.png" alt="" />
-          <img className="img6" src="image5.png" alt="" />
+          <img className="img5" src="https://res.cloudinary.com/dbc4muo4t/image/upload/v1687844916/image4_kkqmvw.png" alt="" />
+          <img className="img6" src="https://res.cloudinary.com/dbc4muo4t/image/upload/v1687844536/image5_gn5rnh.png" alt="" />
         </div>
       </div>
       <div className="block5">
@@ -162,14 +164,14 @@ function App() {
           </div>
         </div>
         <div className="player">
-          <img src="frame 9.png" alt="" />
+          <img src="https://res.cloudinary.com/dbc4muo4t/image/upload/v1687844536/Frame_9_mcyi6z.png" alt="" />
         </div>
       </div>
       <div className="block6">
         <div className="blockDiv">
-          <img src="Mask group 1.png" alt="" />
+          <img src="https://res.cloudinary.com/dbc4muo4t/image/upload/v1687845220/Mask_group_1_g8vbut.png" alt="" />
           <div className="flexBar">
-            <img src="Mask group 2.png" alt="" />
+            <img src="https://res.cloudinary.com/dbc4muo4t/image/upload/v1687845414/Mask_group_2_vrdo15.png" alt="" />
             <div className="emailSection">
               <h2>Join The Waiting List</h2>
               <p>Be first to know when there is a new release.</p>
@@ -179,7 +181,7 @@ function App() {
               </div>
             </div>
           </div>
-          <img className="img" src="Mask group3.png" alt="" />
+          <img className="img" src="https://res.cloudinary.com/dbc4muo4t/image/upload/v1687844537/Mask_group3_r36vr1.png" alt="" />
         </div>
       </div>
       <Footer />

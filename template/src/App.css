@@ -75,7 +75,7 @@
   height: 100vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
   transition: 1s;
-  transform: translateY(-100vh);
+  transform: translateY(-120vh);
  }
 
  .menu-divi{
@@ -88,23 +88,35 @@
   transform: none;
  }
 
+ .menu-div ul Link span{
+  text-decoration: none;
+ }
+
 .link{
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 22.4783px;
-  line-height: 42px;
+  line-height: 22px;
   text-decoration: none;
   color: #FFFFFF;
+  background-color: transparent;
   cursor: pointer;
-  text-decoration: none;
-  text-decoration-style: none;
+  border: none;
+  transition: 1s;
+ }
+
+ .link:hover{
+  border-bottom: 1px solid rgb(216, 212, 212);
+  border-width: 100%;
+  transition: 1s;
  }
 
  .menu-div ul {
    margin-left: 45%;
    list-style-type: none;
    text-align: left;
+   text-decoration: none;
  }
 
  .menu-div li {
@@ -115,6 +127,7 @@
    line-height: 52px;
    color: #FFFFFF;
    cursor: pointer;
+   text-decoration: none;
  }
 
  .popup {
@@ -218,7 +231,13 @@
    justify-content: space-between;
    border-bottom: 1px solid;
    border-color: rgba(255, 255, 255, 0.05);
-   ;
+   transition: 1s;
+   cursor: pointer;
+ }
+
+ .list:hover{
+  border-color: #C4C4C4;
+  transition: 1s;
  }
 
  .list p {
@@ -551,7 +570,7 @@
  .FooterDiv {
    width: 100%;
    height: 100vh;
-   background-image: url(../public/back.png);
+   background-image: url(https://res.cloudinary.com/dbc4muo4t/image/upload/v1687844535/back_n9lxd6.png);
    background-size: cover;
    background-repeat: no-repeat;
    justify-content: center;
@@ -1079,9 +1098,14 @@
      margin-left: 5%;
    }
 
+   FaBars{
+    cursor: pointer;
+   }
+
    .FaBars {
      width: 1.5rem;
      height: 1, 5rem;
+     cursor: pointer;
    }
 
    .menu-div ul {
